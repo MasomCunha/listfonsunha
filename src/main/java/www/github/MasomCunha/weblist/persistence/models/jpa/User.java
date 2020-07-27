@@ -1,14 +1,15 @@
-package www.github.MasomCunha.weblist.persistence.models;
+package www.github.MasomCunha.weblist.persistence.models.jpa;
+
+import www.github.MasomCunha.weblist.persistence.models.jpa.AbstractModel;
+import www.github.MasomCunha.weblist.persistence.models.jpa.List;
 
 import javax.persistence.*;
 import java.util.LinkedList;
 
 @Entity
-public class User {
+public class User extends AbstractModel {
 
-    @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
-    private int id;
+
     private String fullName;
     @OneToMany (
             cascade = {CascadeType.ALL},
@@ -18,9 +19,6 @@ public class User {
     )
     private java.util.List<List> lists = new LinkedList<>();
 
-    public int getId() {
-        return id;
-    }
 
     public String getFullName() {
         return fullName;
@@ -28,10 +26,6 @@ public class User {
 
     public java.util.List<List> getLists() {
         return lists;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setFullName(String fullName) {
@@ -44,6 +38,18 @@ public class User {
 
     public void addToLists(List list) {
         lists.add(list);
+    }
+
+    public void removeList(List list){
+        lists.remove(list);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "fullName='" + fullName + '\'' +
+                ", lists=" + lists +
+                '}';
     }
 }
 

@@ -1,17 +1,18 @@
 package www.github.MasomCunha.weblist.persistence.dao.jpa;
 
 import www.github.MasomCunha.weblist.persistence.dao.Dao;
+import www.github.MasomCunha.weblist.persistence.models.Model;
 
 import javax.persistence.EntityManager;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public abstract class GenericJpaDao<T> implements Dao<T> {
+public abstract class GenericJpaDao<T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;
 
-    protected EntityManager em;
+    protected EntityManager em = EntityManagerUtil.getEm();
 
     public GenericJpaDao(Class<T> modelType) {
         this.modelType = modelType;

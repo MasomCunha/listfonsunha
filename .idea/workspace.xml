@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b146b0-b4c9-41ef-9a58-a2d159adbaa9" name="Default Changelist" comment="" />
+    <list default="true" id="24b146b0-b4c9-41ef-9a58-a2d159adbaa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/jpa/AbstractModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/services/ListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/services/ListServiceImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/services/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/ItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/ItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/ListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/ListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/GenericJpaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/GenericJpaDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaItemDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaItemDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaListDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaListDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/jpa/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/jpa/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/www/github/MasomCunha/weblist/persistence/models/jpa/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/Dao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/Dao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/ItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/ItemDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/ListDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/ListDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/GenericJpaDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/GenericJpaDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaItemDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaItemDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaListDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaListDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/dao/jpa/JpaUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/models/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/models/List.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/www/github/MasomCunha/weblist/persistence/models/User.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +44,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Aspect" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -32,7 +71,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../academiawork/javabank step13" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -75,6 +114,8 @@
       <workItem from="1595239162835" duration="13500000" />
       <workItem from="1595330505539" duration="614000" />
       <workItem from="1595338951815" duration="6538000" />
+      <workItem from="1595687098730" duration="10859000" />
+      <workItem from="1595842291880" duration="600000" />
     </task>
     <servers />
   </component>
@@ -90,10 +131,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1595254283130" />
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1595345884711">
+    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser" timestamp="1595697299997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595345884711" />
+    <state x="488" y="65" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1595697299997" />
     <state x="313" y="53" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1595255460405">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -102,30 +143,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="176" y="289" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1595339089188" />
-    <state x="447" y="223" width="538" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595344810659">
+    <state x="447" y="223" width="557" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1595698011626">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="447" y="223" width="538" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1595344810659" />
+    <state x="447" y="223" width="557" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1595698011626" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1595330520003">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595330520003" />
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom" timestamp="1595348603652">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom" timestamp="1595698337422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595348603652" />
-    <state width="1323" height="208" key="GridCell.Tab.0.center" timestamp="1595348603652">
+    <state width="1323" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595698337422" />
+    <state width="1323" height="2" key="GridCell.Tab.0.center" timestamp="1595698337421">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595348603652" />
-    <state width="1323" height="208" key="GridCell.Tab.0.left" timestamp="1595348603652">
+    <state width="1323" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595698337421" />
+    <state width="1323" height="2" key="GridCell.Tab.0.left" timestamp="1595698337421">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595348603652" />
-    <state width="1323" height="208" key="GridCell.Tab.0.right" timestamp="1595348603652">
+    <state width="1323" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595698337421" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right" timestamp="1595698337422">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="208" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595348603652" />
+    <state width="1323" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595698337422" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1595330505698">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

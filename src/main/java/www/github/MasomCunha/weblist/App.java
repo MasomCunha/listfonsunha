@@ -6,8 +6,12 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.glassfish.jersey.servlet.ServletContainer;
 import www.github.MasomCunha.weblist.persistence.dao.jpa.EntityManagerUtil;
-import www.github.MasomCunha.weblist.persistence.models.List;
-import www.github.MasomCunha.weblist.persistence.models.User;
+import www.github.MasomCunha.weblist.persistence.dao.jpa.JpaListDao;
+import www.github.MasomCunha.weblist.persistence.dao.jpa.JpaUserDao;
+import www.github.MasomCunha.weblist.persistence.models.jpa.List;
+import www.github.MasomCunha.weblist.persistence.models.jpa.User;
+import www.github.MasomCunha.weblist.services.ListServiceImp;
+import www.github.MasomCunha.weblist.services.UserServiceImp;
 
 import javax.persistence.EntityManager;
 import java.sql.SQLException;
@@ -43,29 +47,37 @@ public class App {
     }
 
     private static void populateDB() {
-        EntityManager em = EntityManagerUtil.getEm();
-        User user = new User();
-        user.setFullName("Fonseca");
-        em.getTransaction().begin();
-        User pUser = em.merge(user);
-        em.getTransaction().commit();
 
-        List list = new List();
-        list.setOwner(pUser);
-        list.setListName("compras");
-        em.getTransaction().begin();
-        pUser.addToLists(list);
-        em.merge(pUser);
-        em.getTransaction().commit();
+        UserServiceImp usi = new UserServiceImp();
+        ListServiceImp lsi = new ListServiceImp();
 
-        List list2 = new List();
-        list2.setOwner(pUser);
-        list2.setListName("veterinário");
-        em.getTransaction().begin();
-        pUser.addToLists(list2);
-        em.merge(pUser);
-        em.getTransaction().commit();
+        usi.setListService(lsi);
+        lsi.setUserServiceImp(usi);
 
+        usi.createUser("Fonseca");
+        usi.createUser("Manel");
+        usi.createUser("Marcia");
+        usi.createUser("Juliana");
+
+        usi.getUsers().forEach(user -> System.out.println(user.toString()));
+
+        lsi.createList("compras", 3);
+
+        usi.getUsers().forEach(user -> System.out.println(user.toString()));
+
+        usi.deleteUser(1);
+        usi.getUsers().forEach(user -> System.out.println(user.toString()));
+
+        lsi.removeList(5);
+        usi.getUsers().forEach(user -> System.out.println(user.toString()));
+
+        lsi.createList("compras1", 3);
+        lsi.createList("compras2", 3);
+        lsi.createList("compras3", 3);
+        lsi.createList("compras4", 3);
+        lsi.createList("compras5", 3);
+
+        System.out.println(usi.getUser(3));
 
     }
 

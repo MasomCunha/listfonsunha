@@ -1,14 +1,12 @@
-package www.github.MasomCunha.weblist.persistence.models;
+package www.github.MasomCunha.weblist.persistence.models.jpa;
 
 import javax.persistence.*;
 import java.util.LinkedList;
 
 @Entity
-public class List {
+public class List extends AbstractModel {
 
-    @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
-    private int id;
+
     @ManyToOne
     private User owner;
     private String listName;
@@ -29,14 +27,6 @@ public class List {
     )
     private java.util.List<Item> items = new LinkedList<>();
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getListName() {
         return listName;
     }
@@ -55,5 +45,13 @@ public class List {
 
     public void addItems(Item item){
         items.add(item);
+    }
+
+    @Override
+    public String toString() {
+        return "List{" + "id=" + super.getId() +
+                ", listName='" + listName + '\'' +
+                ", items=" + items +
+                '}';
     }
 }

@@ -1,13 +1,10 @@
-package www.github.MasomCunha.weblist.persistence.models;
+package www.github.MasomCunha.weblist.persistence.models.jpa;
 
 import javax.persistence.*;
 
 @Entity
-public class Item {
+public class Item extends AbstractModel {
 
-    @Id
-    @GeneratedValue (strategy = GenerationType.AUTO)
-    private int id;
     private String content;
 
     public void setList(List list) {
@@ -20,14 +17,6 @@ public class Item {
 
     @ManyToOne
     private List list;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getContent() {
         return content;
